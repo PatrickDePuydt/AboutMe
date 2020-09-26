@@ -25,7 +25,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* * Base * */
 
 :root {
-    --tennisball: #ffff33;
+    /* --tennisball: #ffff33; */
+    --tennisball: coral;
+    --aspect-ratio: 125px;
 }
 
 h1, h2, h4, h5, h6, a {
@@ -37,8 +39,8 @@ p, span, h3 {
 }
 
 h1 {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: calc(var(--aspect-ratio) / 3);
+    line-height: calc(var(--aspect-ratio) / 3);
     color: var(--tennisball);
 }
 
@@ -46,13 +48,13 @@ h1 {
 
 @media only screen and (min-width: 768px) {
     h1 {
-        font-size: 125px;
-        line-height: 125px;
+        font-size: var(--aspect-ratio);
+        line-height: var(--aspect-ratio);
     }
 }
 
 body {
-    background: url("https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80");
+    /* background: url("https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"); */
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -64,6 +66,7 @@ body {
     border: 20px solid var(--tennisball);
     display: flex;
     justify-content: center;
+    position: absolute;
 }
 
 .backdrop-text {
@@ -85,4 +88,9 @@ body {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
+}
+
+.tripwire {
+    border: 1px solid black;
+    padding: var(--aspect-ratio);
 }
