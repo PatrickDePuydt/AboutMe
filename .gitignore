@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+src/.DS_Store
+*.jpg
+*.png
+*.svg
+*.jpeg
