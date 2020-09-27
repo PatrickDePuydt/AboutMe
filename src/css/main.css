@@ -87,7 +87,7 @@ a:hover {
 
 /* **** Base Styles **** */
 
-body {
+[data-target="portrait"] {
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -123,38 +123,38 @@ body {
 
 /* Background Images */
 
-.portrait_1 {
+[data-target="portrait"].portrait_1 {
   background-image: url("../images/portrait_1.jpg");
 }
 
-.portrait_2 {
+[data-target="portrait"].portrait_2 {
   background-image: url("../images/portrait_2.jpg");
 }
 
-.portrait_3 {
+[data-target="portrait"].portrait_3 {
   background-image: url("../images/portrait_3.jpg");
 }
 
-.portrait_4 {
+[data-target="portrait"].portrait_4 {
   background-image: url("../images/portrait_4.jpg");
 }
 
-.portrait_5 {
+[data-target="portrait"].portrait_5 {
   background-image: url("../images/portrait_5.jpg");
 }
 
-.portrait_6 {
+[data-target="portrait"].portrait_6 {
   background-image: url("../images/portrait_6.jpg");
 }
 
-.portrait_7 {
+[data-target="portrait"].portrait_7 {
   background-image: url("../images/portrait_7.jpg");
 }
 
-.portrait_8 {
+[data-target="portrait"].portrait_8 {
   background-image: url("../images/portrait_8.jpg");
 }
 
-.portrait_9 {
+[data-target="portrait"].portrait_9 {
   background-image: url("../images/portrait_9.jpg");
 }
