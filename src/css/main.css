@@ -61,6 +61,7 @@ h3 {
 h1 {
   font-size: calc(var(--aspect-ratio_sizing) / 3);
   color: var(--tennisball_color);
+  font-weight: bold;
 }
 
 /* iPad & Up */
@@ -148,6 +149,7 @@ body {
 .portrait_5 {
   background-image: url("../images/portrait_5.jpg");
 }
+
 .portrait_6 {
   background-image: url("../images/portrait_6.jpg");
 }
@@ -162,13 +164,4 @@ body {
 
 .portrait_9 {
   background-image: url("../images/portrait_9.jpg");
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
