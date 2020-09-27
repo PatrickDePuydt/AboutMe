@@ -37,7 +37,7 @@ section {
   --tennisball_color: #ffff33;
   --coral_color: #ff674d;
   --tiffany_color: #00cecb;
-  --aspect-ratio_sizing: 135px;
+  --aspect-ratio_sizing: 100px;
 }
 
 /* **** Typography **** */
@@ -50,16 +50,18 @@ section {
 /* Mobile First! */
 
 h1 {
-  font-size: calc(var(--aspect-ratio_sizing) / 3);
+  font-size: calc(var(--aspect-ratio_sizing) / 2);
   color: var(--tennisball_color);
   font-weight: bold;
+  border: 20px solid var(--tennisball_color);
+  padding: 15%;
 }
 
 /* iPad & Up */
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: calc(var(--aspect-ratio_sizing) / 2);
+    padding: 15%;
   }
 }
 
@@ -87,7 +89,9 @@ a:hover {
 }
 
 /* **** Base Styles **** */
+
 /* Note: the attriburte selector pattern is to separate concerns from base styling to styling associated with JavaScript. This way, if we need to refactor base styles, we do not affect the styles associated with the plugin. */
+
 [data-target="portrait"] {
   background-position-x: center;
   background-position-y: center;
@@ -98,14 +102,9 @@ a:hover {
   background-size: contain;
 }
 
-.backdrop {
-  border: 20px solid var(--tennisball_color);
-}
-
 /* Mobile First */
 
 .backdrop-text {
-  padding: 15%;
   overflow-wrap: breakword;
   word-wrap: break-word;
   hyphens: auto;
@@ -122,7 +121,9 @@ a:hover {
 }
 
 /* Background Images */
+
 /* Background images exported out to a CDN for faster caching */
+
 [data-target="portrait"].portrait_1 {
   background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224881/public/about_me/portrait_1.jpg");
 }
@@ -157,4 +158,13 @@ a:hover {
 
 [data-target="portrait"].portrait_9 {
   background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_9.jpg");
+}
+
+.visibility_screen {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  mix-blend-mode: color-dodge;
+  opacity: 0.5;
 }
