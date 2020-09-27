@@ -9,16 +9,16 @@ window.addEventListener("scroll", function () {
     backgroundELement.setAttribute("class", " "); // Blow out the classes, start over
     backgroundELement.classList.add("portrait_one"); // Set the portrait back to the first
   } else if (userViewingAt >= 20 && userViewingAt <= 40) {
-    backgroundELement.classList.remove("portrait_one"); // Remove the old
+    backgroundELement.setAttribute("class", " "); // Blow out the classes, start over
     backgroundELement.classList.add("portrait_two"); // Add the new
   } else if (userViewingAt >= 40 && userViewingAt <= 60) {
-    backgroundELement.classList.remove("portrait_two"); // Remove the old
+    backgroundELement.setAttribute("class", " "); // Blow out the classes, start over
     backgroundELement.classList.add("portrait_three"); // Add the new
   } else if (userViewingAt >= 60 && userViewingAt <= 80) {
-    backgroundELement.classList.remove("portrait_three"); // Remove the old
+    backgroundELement.setAttribute("class", " "); // Blow out the classes, start over
     backgroundELement.classList.add("portrait_four"); // Add the new
   } else if (userViewingAt >= 80 && userViewingAt <= 100) {
-    backgroundELement.classList.remove("portrait_four"); // Remove the old
+    backgroundELement.setAttribute("class", " "); // Blow out the classes, start over
     backgroundELement.classList.add("portrait_five"); // Add the new
   } else {
     backgroundELement.setAttribute("class", " "); // Blow out the classes, start over
