@@ -5,22 +5,16 @@ $(window).scroll(function () {
   const backgroundImage = $("[data-target='background']");
 
   const source = "https://source.unsplash.com/random";
-  const portrait_one =
-    "url(https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80)";
+  const portrait_one = "url(images/huge-image.jpg)";
+  const portrait_two = "url(images/huge-image-2.jpg)";
+  const portrait_three = "url(images/huge-image-3.jpg)";
 
-  const portrait_two =
-    "url(https://images.unsplash.com/photo-1600496461900-3f1b74fb40d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=930&q=80)";
-
-  const portrait_three =
-    "url(https://images.unsplash.com/photo-1598628340414-bbf4c9e21604?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80)";
-
-  const portrait_four =
-    "url(https://images.unsplash.com/photo-1586979270468-e3819db6cacb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1285&q=80)";
-  const portrait_five = `url(${source})`;
-  const portrait_six = `url(${source})`;
-  const portrait_seven = `url(${source})`;
-  const portrait_eight = `url(${source})`;
-  const portrait_nine = `url(${source})`;
+  const portrait_four = portrait_two;
+  const portrait_five = portrait_three;
+  const portrait_six = portrait_one;
+  const portrait_seven = portrait_two;
+  const portrait_eight = portrait_three;
+  const portrait_nine = portrait_one;
 
   if (userIsScrollingAt < 9) {
     backgroundImage.css("background-image", portrait_one);
