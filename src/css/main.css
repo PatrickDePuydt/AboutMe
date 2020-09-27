@@ -87,16 +87,15 @@ a:hover {
 }
 
 /* **** Base Styles **** */
-
+/* Note: the attriburte selector pattern is to separate concerns from base styling to styling associated with JavaScript. This way, if we need to refactor base styles, we do not affect the styles associated with the plugin. */
 [data-target="portrait"] {
   background-position-x: center;
   background-position-y: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
 .backdrop {
@@ -123,39 +122,39 @@ a:hover {
 }
 
 /* Background Images */
-
+/* Background images exported out to a CDN for faster caching */
 [data-target="portrait"].portrait_1 {
-  background-image: url("../images/portrait_1.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224881/public/about_me/portrait_1.jpg");
 }
 
 [data-target="portrait"].portrait_2 {
-  background-image: url("../images/portrait_2.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_2.jpg");
 }
 
 [data-target="portrait"].portrait_3 {
-  background-image: url("../images/portrait_3.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_3.jpg");
 }
 
 [data-target="portrait"].portrait_4 {
-  background-image: url("../images/portrait_4.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_4.jpg");
 }
 
 [data-target="portrait"].portrait_5 {
-  background-image: url("../images/portrait_5.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_5.jpg");
 }
 
 [data-target="portrait"].portrait_6 {
-  background-image: url("../images/portrait_6.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_6.jpg");
 }
 
 [data-target="portrait"].portrait_7 {
-  background-image: url("../images/portrait_7.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_7.jpg");
 }
 
 [data-target="portrait"].portrait_8 {
-  background-image: url("../images/portrait_8.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_8.jpg");
 }
 
 [data-target="portrait"].portrait_9 {
-  background-image: url("../images/portrait_9.jpg");
+  background-image: url("https://res.cloudinary.com/front-end-careers/image/upload/v1601224615/public/about_me/portrait_9.jpg");
 }
