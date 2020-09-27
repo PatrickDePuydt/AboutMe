@@ -24,9 +24,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* * Base * */
 
 :root {
-    --tennisball: #ffff33;
-    --aspect-ratio: 125px;
+    --tennisball_color: #ffff33;
+    --coral_color: #FF674D;
+    --aspect-ratio_sizing: 135px;
 }
+
+/* **** Typography **** */
 
 h1, h2, h4, h5, h6, a {
     font-family: 'Work Sans', sans-serif;
@@ -36,24 +39,48 @@ p, span, h3 {
     font-family: 'Bitter', serif;
 }
 
+/* Mobile First! */
+
 h1 {
-    font-size: calc(var(--aspect-ratio) / 3);
-    line-height: calc(var(--aspect-ratio) / 3);
-    color: var(--tennisball);
+    font-size: calc(var(--aspect-ratio_sizing) / 3);
+    color: var(--tennisball_color);
 }
 
 /* iPad & Up */
 
 @media only screen and (min-width: 768px) {
     h1 {
-        font-size: var(--aspect-ratio);
-        line-height: var(--aspect-ratio);
+        font-size: calc(var(--aspect-ratio_sizing) / 2);
     }
 }
 
+/* Desktop & Up */
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: var(--aspect-ratio_sizing);
+    }
+}
+
+a {
+    color: var(--coral_color);
+    text-decoration: none;
+    transition: .15s all ease;
+}
+
+a:visited {
+    color: var(--coral_color);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #00CECB;
+}
+
+/* **** Base Styles **** */
+
 body {
-    /* background: url("https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"); */
-    /* background: url("../images/huge-image.jpg"); */
+    background: url("https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80");
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -62,33 +89,24 @@ body {
 }
 
 .backdrop {
-    border: 20px solid var(--tennisball);
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    border: 20px solid var(--tennisball_color);
 }
 
+/* Mobile First */
+
 .backdrop-text {
-    padding: 25%;
-    overflow-wrap: break-word;
+    padding: 15%;
+    overflow-wrap: breakword;
     word-wrap: break-word;
     hyphens: auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* iPad & Up */
 
 @media only screen and (min-width: 768px) {
     .backdrop-text {
-        padding: 50%;
+        padding: 20%;
     }
-}
-
-.backdrop-text {
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.lazy_load {
-    display: none;
 }

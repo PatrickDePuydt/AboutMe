@@ -16,26 +16,26 @@ $(window).scroll(function () {
   const portrait_eight = portrait_three;
   const portrait_nine = portrait_one;
 
-  if (userIsScrollingAt < 9) {
-    backgroundImage.css("background-image", portrait_one);
-  } else if (userIsScrollingAt >= 10 && userIsScrollingAt <= 20) {
-    backgroundImage.css("background-image", portrait_two);
-  } else if (userIsScrollingAt >= 10 && userIsScrollingAt <= 20) {
-    backgroundImage.css("background-image", portrait_three);
-  } else if (userIsScrollingAt >= 20 && userIsScrollingAt <= 30) {
-    backgroundImage.css("background-image", portrait_four);
-  } else if (userIsScrollingAt >= 30 && userIsScrollingAt <= 40) {
-    backgroundImage.css("background-image", portrait_five);
-  } else if (userIsScrollingAt >= 40 && userIsScrollingAt <= 50) {
-    backgroundImage.css("background-image", portrait_six);
-  } else if (userIsScrollingAt >= 50 && userIsScrollingAt <= 60) {
-    backgroundImage.css("background-image", portrait_seven);
-  } else if (userIsScrollingAt >= 60 && userIsScrollingAt <= 70) {
-    backgroundImage.css("background-image", portrait_eight);
-  } else if (userIsScrollingAt >= 80 && userIsScrollingAt <= 90) {
-    backgroundImage.css("background-image", portrait_nine);
-  } else {
-    backgroundImage.css("background-image", portrait_one);
-  }
+  //   if (userIsScrollingAt < 9) {
+  //     backgroundImage.css("background-image", portrait_one);
+  //   } else if (userIsScrollingAt >= 10 && userIsScrollingAt <= 20) {
+  //     backgroundImage.css("background-image", portrait_two);
+  //   } else if (userIsScrollingAt >= 10 && userIsScrollingAt <= 20) {
+  //     backgroundImage.css("background-image", portrait_three);
+  //   } else if (userIsScrollingAt >= 20 && userIsScrollingAt <= 30) {
+  //     backgroundImage.css("background-image", portrait_four);
+  //   } else if (userIsScrollingAt >= 30 && userIsScrollingAt <= 40) {
+  //     backgroundImage.css("background-image", portrait_five);
+  //   } else if (userIsScrollingAt >= 40 && userIsScrollingAt <= 50) {
+  //     backgroundImage.css("background-image", portrait_six);
+  //   } else if (userIsScrollingAt >= 50 && userIsScrollingAt <= 60) {
+  //     backgroundImage.css("background-image", portrait_seven);
+  //   } else if (userIsScrollingAt >= 60 && userIsScrollingAt <= 70) {
+  //     backgroundImage.css("background-image", portrait_eight);
+  //   } else if (userIsScrollingAt >= 80 && userIsScrollingAt <= 90) {
+  //     backgroundImage.css("background-image", portrait_nine);
+  //   } else {
+  //     backgroundImage.css("background-image", portrait_one);
+  //   }
   console.log("userIsScrollingAt: ", userIsScrollingAt);
 });
