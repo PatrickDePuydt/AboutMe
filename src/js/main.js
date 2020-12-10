@@ -1,3 +1,5 @@
+// This absolute unit controols my background image. I don't know a better way and I ened up chasing my tail for hours trying to make it better. Might showing me how the pro's do it?
+
 window.addEventListener("scroll", function () {
   // When a user starts scrolling...
   const scrollPosition = Math.round(this.scrollY); // Grab the scroll position, rounding these suckers off because aint nobody got time for that
