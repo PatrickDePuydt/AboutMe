@@ -37,3 +37,5 @@ window.addEventListener("scroll", function () {
     backgroundELement.classList.add("portrait_1"); // Set the portrait back to the first
   }
 });
+
+// So this is a SUPER embarassing solution but I did it honestly and to the best of my knolwedge. Would love some feedback.
